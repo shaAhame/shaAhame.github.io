@@ -466,14 +466,14 @@
         }
 
         .skill-bar {
-            background: var(--bg-light);
+            background: rgba(0, 0, 0, 0.2);
             height: 8px;
             border-radius: 10px;
             overflow: hidden;
         }
 
         body.dark-mode .skill-bar {
-            background: var(--border-dark);
+            background: rgba(255, 255, 255, 0.2);
         }
 
         .skill-fill {
@@ -481,6 +481,7 @@
             height: 100%;
             border-radius: 10px;
             animation: fillBar 1s ease;
+            width: var(--width);
         }
 
         @keyframes fillBar {
